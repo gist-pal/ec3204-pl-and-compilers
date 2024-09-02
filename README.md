@@ -11,6 +11,7 @@ The goal of this course is to learn principles of compiler construction and rela
 |#|Date|Topics|Recommended Reading|
 |-|-|------|------|
 |0|9/2|[Course Overview](slides/lec0.pdf)||
+|0|9/2|[Overview of Compilers](slides/lec1.pdf)||
 
 ## References & Acknowledgements
 My lecture slides are based on the slides from the following courses.
