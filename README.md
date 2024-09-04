@@ -1,6 +1,6 @@
 # EC3204: Programming Languages and Compilers (프로그래밍 언어 및 컴파일러)
 * Instuctor: [Sunbeom So](https://gist-pal.github.io)
-* Location: EECS B201
+* Location: Haerim hall, EECS-B building
 * Time: Mon/Wed 16:00-17:30
 
 ## About The Course
