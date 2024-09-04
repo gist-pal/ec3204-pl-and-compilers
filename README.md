@@ -6,12 +6,14 @@
 ## About The Course
 A compiler is a software system that translates a program written in one language (source language) into a semantically equivalent program written in another language (target language).
 The goal of this course is to learn principles of compiler construction and related programming language theories.
+* Textbook: **Compilers: Principles, Techniques, and Tools** (CPTT)
 
 ## Schedule
 |#|Date|Topics|Recommended Reading|
 |-|-|------|------|
-|0|9/2|[Course Overview](slides/lec0.pdf)||
+|0|9/2|[Course Overview](slides/lec0.pdf)|CPTT Ch.1|
 |0|9/2|[Overview of Compilers](slides/lec1.pdf)||
+|0|9/4|[Lexical Analysis (1)](slides/lec2.pdf)|CPTT Ch.3.3|
 
 ## References & Acknowledgements
 My lecture slides are based on the slides from the following courses.
