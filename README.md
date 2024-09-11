@@ -19,6 +19,15 @@ The goal of this course is to learn principles of compiler construction and rela
 |3|9/9|[Lexical Analysis (2)](slides/lec3.pdf)|CPTT Ch.3.4, 3.6, 3.7.5|
 |4|9/11|[Lexical Analysis (3)](slides/lec4.pdf)|CPTT Ch.3.7.4, 3.7.1|
 
+## Academic Integrity
+By registering for this course, I will assume you agree with the policy below.
+* All assignments (i.e., writing code) must be your own work. No discussions are allowed.
+  * You should not share/show your code.
+  * You should not post your code on public websites.
+  * You should not modify other students’ code.
+* I will have a one-on-one meeting with each student under suspicion. If you fail to prove your integrity in the meeting (e.g., failing to answer my questions about the details of your submissions), I will consider that you cheated on your assignments, even if you do not admit to your cheating.
+* Cheating on assignments will result in an F.
+
 ## References & Acknowledgements
 My lecture slides are based on the slides from the following courses.
 
