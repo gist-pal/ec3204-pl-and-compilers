@@ -16,7 +16,8 @@ The goal of this course is to learn principles of compiler construction and rela
 |0|9/2|[Course Overview](slides/lec0.pdf)|CPTT Ch.1|
 |1|9/2|[Overview of Compilers](slides/lec1.pdf)||
 |2|9/4|[Lexical Analysis (1)](slides/lec2.pdf)|CPTT Ch.3.3|
-|3|9/4|[Lexical Analysis (2)](slides/lec3.pdf)|CPTT Ch.3.4, 3.6, 3.7.5|
+|3|9/9|[Lexical Analysis (2)](slides/lec3.pdf)|CPTT Ch.3.4, 3.6, 3.7.5|
+|4|9/11|[Lexical Analysis (3)](slides/lec4.pdf)|CPTT Ch.3.7.4, 3.7.1|
 
 ## References & Acknowledgements
 My lecture slides are based on the slides from the following courses.
