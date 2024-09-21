@@ -7,6 +7,23 @@
 A compiler is a software system that translates a program written in one language (source language) into a semantically equivalent program written in another language (target language).
 The goal of this course is to learn principles of compiler construction and related programming language theories.
 
+## Configuring the Programming Environment
+**Note1**: This instruction assumes that you are using the Linux command line interface. For Windows users, I recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install). <br>
+**Note2**: I checked that the following commands successfully work for the clean docker image ``python:3.9.19-slim``.
+
+### Installing [OCaml](https://ocaml.org/install)
+```
+$ chmod +x setup/install_ocaml.sh; ./setup/install_ocaml.sh; eval $(opam env)
+```
+
+If the installations were successful,
+you should see the message ``The OCaml toplevel, version 5.1.1``
+by running the command ``ocaml --version``.
+```
+$ ocaml --version
+The OCaml toplevel, version 5.1.1
+```
+
 ## Textbook
 * [Compilers: Principles, Techniques, and Tools](https://www.amazon.com/Compilers-Principles-Techniques-Tools-2nd/dp/0321486811) (CPTT)
 
