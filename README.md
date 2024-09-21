@@ -11,7 +11,8 @@ The goal of this course is to learn principles of compiler construction and rela
 **Note1**: This instruction assumes that you are using the Linux command line interface. For Windows users, I recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install). <br>
 **Note2**: I checked that the following commands successfully work for the clean docker image ``python:3.9.19-slim``.
 
-### Installing [OCaml](https://ocaml.org/install)
+We will use [OCaml](https://ocaml.org/install) programming language for our programming exercises.
+To install OCaml, simply copy and run the following command in the terminal.
 ```
 $ chmod +x setup/install_ocaml.sh; ./setup/install_ocaml.sh; eval $(opam env)
 ```
