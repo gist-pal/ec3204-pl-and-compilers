@@ -12,12 +12,21 @@ The goal of this course is to learn principles of compiler construction and rela
 **Note2**: I checked that the following commands successfully work for the clean docker image ``python:3.9.19-slim``.
 
 We will use [OCaml](https://ocaml.org/install) programming language for our programming exercises.
-To install OCaml, simply copy and run the following command in the terminal.
+To install OCaml, simply copy and run the following commands in the terminal.
+
+### Ubuntu (or WSL)
 ```
-$ chmod +x setup/install_ocaml.sh; ./setup/install_ocaml.sh; eval $(opam env)
+$ chmod +x setup/install_ocaml_ubuntu.sh; ./setup/install_ocaml_ubuntu.sh; eval $(opam env)
 ```
 
-If the installations were successful,
+### macOS
+```
+$ chmod +x setup/install_ocaml_mac.sh; ./setup/install_ocaml_mac.sh; eval $(opam env)
+```
+
+### Testing
+For any OS,
+if the installations were successful,
 you should see the message ``The OCaml toplevel, version 5.1.1``
 by running the command ``ocaml --version``.
 ```
