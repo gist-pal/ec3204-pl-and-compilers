@@ -1,4 +1,4 @@
-# EC3204: Programming Languages and Compilers (프로그래밍 언어 및 컴파일러)
+# EC3204: Programming Languages and Compilers <br> (프로그래밍 언어 및 컴파일러)
 * Instuctor: [Sunbeom So](https://gist-pal.github.io)
 * Location: Haerim hall, EECS-B building
 * Time: Mon/Wed 16:00-17:30
@@ -28,7 +28,7 @@ $ chmod +x setup/install_ocaml_mac.sh; ./setup/install_ocaml_mac.sh; eval $(opam
 For any OS,
 if the installations were successful,
 you should see the message ``The OCaml toplevel, version 5.1.1``
-by running the command ``ocaml --version``.
+by running the command ``ocaml --version`` in the terminal.
 ```
 $ ocaml --version
 The OCaml toplevel, version 5.1.1
