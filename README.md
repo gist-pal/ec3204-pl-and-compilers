@@ -8,8 +8,10 @@ A compiler is a software system that translates a program written in one languag
 The goal of this course is to learn principles of compiler construction and related programming language theories.
 
 ## Configuring the Programming Environment
-**Note1**: This instruction assumes that you are using the Linux command line interface. For Windows users, I recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install). <br>
-**Note2**: I checked that the following commands successfully work for the clean docker image ``python:3.9.19-slim``.
+* **Note1**: This instruction assumes that you are using the Linux command line interface. For Windows users, I recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+  * [[WSL setup](setup/wsl-install-guideline.pdf)]: We provide a PDF guideline that explains how to install WSL and how to share files between the host OS and the guest OS.
+  * [[script](setup/wsl_install.ps1)]: For running this installation script, please refer to p.02 of the above PDF guideline.
+* **Note2**: I checked that the following commands successfully work for the clean docker image ``python:3.9.19-slim``.
 
 We will use [OCaml](https://ocaml.org/install) programming language for our programming exercises.
 To install OCaml, simply copy and run the following commands in the terminal.
