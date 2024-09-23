@@ -1,6 +1,6 @@
 ---
 name: Question
-about: ''
+about: 'ask your questions'
 title: "[Question]"
 labels: ''
 assignees: ''
