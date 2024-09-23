@@ -8,28 +8,32 @@ A compiler is a software system that translates a program written in one languag
 The goal of this course is to learn principles of compiler construction and related programming language theories.
 
 ## Configuring the Programming Environment
-* **Note1**: This instruction assumes that you are using the Linux command line interface. For Windows users, I recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
-  * [[WSL setup](setup/wsl-install-guideline.pdf)]: We provide a PDF guideline that explains how to install WSL and how to share files between the host OS and the guest OS.
-  * [[script](setup/wsl_install.ps1)]: For running this installation script, please refer to p.02 of the above PDF guideline.
-* **Note2**: I checked that the following commands successfully work for the clean docker image ``python:3.9.19-slim``.
-
-We will use [OCaml](https://ocaml.org/install) programming language for our programming exercises.
-To install OCaml, simply copy and run the following commands in the terminal.
-
-### Ubuntu (or WSL)
-```
-$ chmod +x setup/install_ocaml_ubuntu.sh; ./setup/install_ocaml_ubuntu.sh; eval $(opam env)
-```
+We will use [OCaml](https://ocaml.org/install) programming language for our programming exercises. This instruction assumes that you are using the Linux command line interface.
 
 ### macOS
+To install OCaml, simply copy and run the following commands in the terminal.
 ```
 $ chmod +x setup/install_ocaml_mac.sh; ./setup/install_ocaml_mac.sh; eval $(opam env)
 ```
 
-### Testing
-For any OS,
-if the installations were successful,
-you should see the message ``The OCaml toplevel, version 5.1.1``
+### Ubuntu
+To install OCaml, simply copy and run the following commands in the terminal. I checked that the following commands successfully work for the clean docker image ``python:3.9.19-slim``.
+```
+$ chmod +x setup/install_ocaml_ubuntu.sh; ./setup/install_ocaml_ubuntu.sh; eval $(opam env)
+```
+
+### Windows
+For Windows users, I recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install).
+  * [WSL setup](setup/wsl-install-guideline.pdf): We provide a PDF guideline that explains how to install WSL and how to share files between the host OS and the guest OS.
+  * [script](setup/wsl_install.ps1): For running this installation script, please refer to p.02 of the above PDF guideline.
+    
+After setting up WSL, simply copy and run the following commands in the terminal to install OCaml.
+```
+$ chmod +x setup/install_ocaml_ubuntu.sh; ./setup/install_ocaml_ubuntu.sh; eval $(opam env)
+```
+
+### Installation Verification
+For any OS, if the installation was successful, you should see the message ``The OCaml toplevel, version 5.1.1``
 by running the command ``ocaml --version`` in the terminal.
 ```
 $ ocaml --version
