@@ -53,6 +53,7 @@ The OCaml toplevel, version 5.1.1
 |3|9/9|[Lexical Analysis (2)](slides/lec3.pdf)|CPTT Ch.3.4, 3.6, 3.7.5|
 |4|9/11,9/23|[Lexical Analysis (3)](slides/lec4.pdf)|CPTT Ch.3.7.4, 3.7.1|
 |-|9/25,9/30,10/2|[Functional Programming in OCaml](slides/lec-ocaml.pdf)| |
+|5|10/7|[Syntax Analysis (1)](slides/lec5.pdf)|CPTT Ch.4.2|
 
 ## Academic Integrity
 By registering for this course, I will assume you agree with the policy below.
