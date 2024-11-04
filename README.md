@@ -56,6 +56,8 @@ The OCaml toplevel, version 5.1.1
 |5|10/7|[Syntax Analysis (1)](slides/lec5.pdf)|CPTT Ch.4.2|
 |6|10/14,10/16|[Syntax Analysis (2)](slides/lec6.pdf)|CPTT Ch.2.2, 4.3, 4.4|
 |7|10/21,10/23|[Syntax Analysis (3)](slides/lec7.pdf)|CPTT Ch.4.5, 4.6|
+|-|10/28|Mid-term Exam||
+|8|11/4|[Syntax Analysis (4)](slides/lec8.pdf)|CPTT Ch.4.8|
 
 ## Academic Integrity
 By registering for this course, I will assume you agree with the policy below.
