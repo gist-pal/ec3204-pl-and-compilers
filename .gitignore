@@ -2,3 +2,9 @@
 *.swp
 _build
 main.native
+*.cmo
+*.cmi
+a.out
+lexer.ml
+parser.ml
+parser.mli
