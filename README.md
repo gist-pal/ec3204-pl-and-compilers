@@ -58,6 +58,7 @@ The OCaml toplevel, version 5.1.1
 |7|10/21,10/23|[Syntax Analysis (3)](slides/lec7.pdf)|CPTT Ch.4.5, 4.6|
 |-|10/28|Mid-term Exam||
 |8|11/4|[Syntax Analysis (4)](slides/lec8.pdf)|CPTT Ch.4.8|
+|9|11/6|[Lexer & Parser Generators](slides/lec9.pdf)|CPTT Ch.4.9, [Tutorial for ocamllex, ocamlyacc](https://ocaml.org/manual/5.2/lexyacc.html)|
 
 ## Academic Integrity
 By registering for this course, I will assume you agree with the policy below.
