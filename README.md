@@ -43,6 +43,7 @@ The OCaml toplevel, version 5.1.1
 
 ## Textbook
 * [Compilers: Principles, Techniques, and Tools](https://www.amazon.com/Compilers-Principles-Techniques-Tools-2nd/dp/0321486811) (CPTT)
+* [Semantics with Applications: An Appetizer](https://link.springer.com/book/10.1007/978-1-84628-692-6) (SAA)
 
 ## Schedule
 |#|Date|Topics|Recommended Reading|
@@ -61,7 +62,7 @@ The OCaml toplevel, version 5.1.1
 |9|11/6|[Lexer & Parser Generators](slides/lec9.pdf)|CPTT Ch.4.9, [Tutorial for ocamllex, ocamlyacc](https://ocaml.org/manual/5.2/lexyacc.html)|
 |10|11/11|[Semantic Analysis (1)](slides/lec10.pdf)||
 |-|11/13|[Undecidability, Halting Problem](slides/lec-halting.pdf)||
-|11|11/13,20|[Semantic Analysis (2)](slides/lec11.pdf)||
+|11|11/13,20|[Semantic Analysis (2)](slides/lec11.pdf)|SAA Ch.7.1|
 
 ## Academic Integrity
 By registering for this course, I will assume you agree with the policy below.
