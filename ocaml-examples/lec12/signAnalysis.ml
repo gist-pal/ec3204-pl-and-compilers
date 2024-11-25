@@ -31,45 +31,6 @@ type cmd =
 (***** Abstract Domain *****)
 (***************************)
 
-module AbsBool = struct
-  type t = Top | Bot | True | False
-
-  let porder : t -> t -> bool
-  = fun b1 b2 ->
-    if b1 = b2 then true
-    else
-      match b1,b2 with
-      | Bot,_ -> true
-      | _,Top -> true
-      | _ -> false
-
-  let to_string : t -> string
-  = fun t ->
-    match t with
-    | Bot -> "bot"
-    | False -> "false"
-    | True -> "true"
-    | Top -> "top"
-
-  let not : t -> t
-  = fun b ->
-    match b with
-    | Bot -> Bot
-    | True -> False
-    | False -> True
-    | Top -> Top
-
-  let band : t -> t -> t
-  = fun b1 b2 ->
-    match b1,b2 with
-    | Bot,_
-    | _,Bot -> Bot
-    | True,True -> True
-    | False,_
-    | _,False -> False
-    | _ -> Top
-end
-
 module Sign = struct
   type t = Top | Bot | Pos | Neg | Zero | NonPos | NonNeg | NonZero
 
@@ -149,32 +110,72 @@ module Sign = struct
 
   let sub s1 s2 = raise NotImplemented (* TODO: exercise *)
   let mul s1 s2 = raise NotImplemented (* TODO: exercise *)
+end
 
-  let leq : t -> t -> AbsBool.t
+module AbsBool = struct
+  open Sign
+  type t = Top | Bot | True | False
+
+  let porder : t -> t -> bool
+  = fun b1 b2 ->
+    if b1 = b2 then true
+    else
+      match b1,b2 with
+      | Bot,_ -> true
+      | _,Top -> true
+      | _ -> false
+
+  let to_string : t -> string
+  = fun t ->
+    match t with
+    | Bot -> "bot"
+    | False -> "false"
+    | True -> "true"
+    | Top -> "top"
+
+  let not : t -> t
+  = fun b ->
+    match b with
+    | Bot -> Bot
+    | True -> False
+    | False -> True
+    | Top -> Top
+
+  let band : t -> t -> t
+  = fun b1 b2 ->
+    match b1,b2 with
+    | Bot,_
+    | _,Bot -> Bot
+    | True,True -> True
+    | False,_
+    | _,False -> False
+    | _ -> Top
+
+  let leq : Sign.t -> Sign.t -> t
   = fun s1 s2 ->
     match s1,s2 with
-    | Bot,_ -> AbsBool.Bot
-    | _,Bot -> AbsBool.Bot
-    | Neg,_ when List.mem s2 [Zero;Pos;NonNeg] -> AbsBool.True
-    | Zero,_ when List.mem s2 [Zero;Pos;NonNeg] -> AbsBool.True
-    | Pos,_ -> AbsBool.Top
-    | NonPos,_ when List.mem s2 [Pos] -> AbsBool.True
-    | NonZero,_ -> AbsBool.Top
-    | NonNeg,_ -> AbsBool.Top
-    | _ -> AbsBool.Top
+    | Bot,_ -> Bot
+    | _,Bot -> Bot
+    | Neg,_ when List.mem s2 [Zero;Pos;NonNeg] -> True
+    | Zero,_ when List.mem s2 [Zero;Pos;NonNeg] -> True
+    | Pos,_ -> Top
+    | NonPos,_ when List.mem s2 [Pos] -> True
+    | NonZero,_ -> Top
+    | NonNeg,_ -> Top
+    | _ -> Top
 
-  let eq : t -> t -> AbsBool.t
+  let eq : Sign.t -> Sign.t -> t
   = fun s1 s2 ->
     match s1,s2 with
-    | Bot,_ -> AbsBool.Bot
-    | _,Bot -> AbsBool.Bot
-    | Zero,_ when List.mem s2 [Neg;Pos;NonZero] -> AbsBool.False
-    | Zero,Zero -> AbsBool.True
-    | Pos,_ when List.mem s2 [Neg;Zero;NonPos] -> AbsBool.False
-    | NonPos,Pos -> AbsBool.False
-    | NonZero,Zero -> AbsBool.False
-    | NonNeg,Neg -> AbsBool.False
-    | _ -> AbsBool.Top
+    | Bot,_ -> Bot
+    | _,Bot -> Bot
+    | Zero,_ when List.mem s2 [Neg;Pos;NonZero] -> False
+    | Zero,Zero -> True
+    | Pos,_ when List.mem s2 [Neg;Zero;NonPos] -> False
+    | NonPos,Pos -> False
+    | NonZero,Zero -> False
+    | NonNeg,Neg -> False
+    | _ -> Top
 end
 
 module AbsMem = struct
@@ -225,8 +226,8 @@ let rec eval_b : bexp -> AbsMem.t -> AbsBool.t
   match b with
   | True -> AbsBool.True
   | False -> AbsBool.False
-  | Eq (a1, a2) -> Sign.eq (eval_a a1 m) (eval_a a2 m)
-  | Leq (a1, a2) -> Sign.leq (eval_a a1 m) (eval_a a2 m)
+  | Eq (a1, a2) -> AbsBool.eq (eval_a a1 m) (eval_a a2 m)
+  | Leq (a1, a2) -> AbsBool.leq (eval_a a1 m) (eval_a a2 m)
   | Not b -> AbsBool.not (eval_b b m)
   | And (b1, b2) -> AbsBool.band (eval_b b1 m) (eval_b b2 m)
 
