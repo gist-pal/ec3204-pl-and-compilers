@@ -1,0 +1,17 @@
+(* expected output: 1 *)
+
+loop2 (int n) {
+  int i;
+  int j;
+  
+  i = 1;
+  j = 1;
+
+  while (i<n) {
+    j = j+i;
+    i = i+1;
+	assert(i<=j); (* safe, but cannot be proven using our interval analysis *)
+	assert(1<=j); (* safe, provable *)
+	assert(i==j); (* unsafe *)
+  }
+}

@@ -1,0 +1,17 @@
+(* expected output: 1 *)
+
+loop3 (int n) {
+  int x;
+  int y;
+  
+  x = 0;
+  y = 0;
+
+  while (x<10) {
+    x = x+1;
+	y = y+1;
+  }
+
+  assert (x==10 && 0<=y); (* safe, provable *)
+  assert (10<=y); (* safe, but cannot be proven using our interval analysis *)
+}

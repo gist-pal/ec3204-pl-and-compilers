@@ -1,0 +1,29 @@
+(* expected output: 4 *)
+
+array (int n) {
+  int i;
+  int j;
+  int[10] a;
+  int[10] b;
+
+  assert (len(a) == 10); (* safe, provable *)
+
+  i = 0;
+  while (i < 10) {
+    assert(i < len(a)); (* safe, provable *)
+    a[i] = i;
+    assert(i < len(b)); (* safe, provable *)
+	b[i] = i;
+    i = i+1;
+    j = j+1;
+  }
+
+  assert(i-1 < len(a)); (* safe, provable *)
+  a[i-1] = 10;
+
+  assert(i < len(a)); (* unsafe *)
+  a[i] = 10;
+
+  assert(j < len(a)); (* unsafe *)
+  a[j] = 5;
+}
