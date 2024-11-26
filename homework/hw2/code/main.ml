@@ -14,9 +14,9 @@ let main () =
   let _ =
     print_endline "========== Processing ==========";
     let proven = ItvAnalysis.run pgm in
-    print_endline "========== Verification Result ==========";
-    print_endline (string_of_int proven) in
+    print_endline "========== Result ==========";
+    print_endline ("- # Proven : " ^ string_of_int proven) in
   let t1 = Sys.time () in
-  print_endline ("Time : " ^ string_of_float (t1 -. t0) ^ "seconds")
+  print_endline ("- Time : " ^ string_of_float (t1 -. t0) ^ "seconds")
 
 let _ = main ()
