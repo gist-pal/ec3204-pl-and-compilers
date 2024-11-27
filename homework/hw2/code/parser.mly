@@ -61,11 +61,11 @@ compound_cmd:
       LPAREN bexp RPAREN
       LBRACE cmd RBRACE {L.While ($3,$6)}
 
-aexp: (* TODO: complete the grammar spec *)
+aexp: (* TODO *)
   | MINUS NUM {L.Int ($2* (-1))}
   | NUM {L.Int $1}
 
-bexp: (* TODO: complete the grammar spec *)
+bexp: (* TODO *)
   | TRUE {L.True}
 
 lv:
