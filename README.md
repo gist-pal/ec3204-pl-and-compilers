@@ -64,7 +64,8 @@ The OCaml toplevel, version 5.1.1
 |-|11/13|[Undecidability, Halting Problem](slides/lec-halting.pdf)||
 |11|11/13,20|[Semantic Analysis (2)](slides/lec11.pdf)|SAA Ch.7.1|
 |12|11/25|[Semantic Analysis (3)](slides/lec12.pdf)||
-|13|11/25|[Semantic Analysis (4)](slides/lec13.pdf)||
+|13|11/25,27|[Semantic Analysis (4)](slides/lec13.pdf)||
+|14|12/2|[Intermediate Representation (1)](slides/lec14.pdf)||
 
 ## Academic Integrity
 By registering for this course, I will assume you agree with the policy below.
