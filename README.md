@@ -67,7 +67,8 @@ The OCaml toplevel, version 5.1.1
 |13|11/25,27|[Semantic Analysis (4)](slides/lec13.pdf)||
 |14|12/2|[Intermediate Representation (1)](slides/lec14.pdf)||
 |15|12/4|[Intermediate Representation (2)](slides/lec15.pdf)|CPTT Ch.6.2, 8.4|
-|16|12/4|[Optimization (1)](slides/lec16.pdf)||
+|16|12/4|[Optimization (1)](slides/lec16.pdf)|CPTT Ch.9.1|
+|17|12/9|[Optimization (2)](slides/lec17.pdf)|CPTT Ch.9.2|
 
 ## Academic Integrity
 By registering for this course, I will assume you agree with the policy below.
