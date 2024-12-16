@@ -70,6 +70,7 @@ The OCaml toplevel, version 5.1.1
 |16|12/4|[Optimization (1)](slides/lec16.pdf)|CPTT Ch.9.1|
 |17|12/9|[Optimization (2)](slides/lec17.pdf)|CPTT Ch.9.2|
 |18|12/11|[Register Allocation](slides/lec18.pdf)||
+|-|12/16|Final Exam||
 
 ## Academic Integrity
 By registering for this course, I will assume you agree with the policy below.
